@@ -19,7 +19,9 @@ import uuid
 
 import requests
 import pytesseract 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+import platform
+if platform.system() == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 from PIL import Image
 from flask import Flask, request, jsonify, send_file, render_template
 
