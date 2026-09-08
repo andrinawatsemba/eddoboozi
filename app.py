@@ -1,5 +1,5 @@
 """
-Eddoboozi — page-to-voice prototype backend.
+IRAKA — page-to-voice prototype backend.
 
 Two endpoints:
   POST /ocr   -> {text}                 (pytesseract, fully local, free)
